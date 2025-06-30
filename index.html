@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookish</title>
+    <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="nav.css"/>
+</head>
+<body>    
+    <div id="navbar"></div>
+    <script>
+        fetch('navbar.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+    <div class="recipe-list">
+    <div class="wrapper">
+        <div class="card-container">
+            <div class="card">   
+                <h1>Red Sauce Pasta</h1>
+                <img src="Pasta.jpg" alt="Custom Image">
+                <p>Time: 20 mins</p>
+                <button onclick="viewPastaRecipe(0)">View Recipe</button>
+            </div>
+            <div class="card">
+                <h1>Mug Cake</h1>
+                <img src="mug cake.jpg" alt="Custom Image">
+                <p>Time: 10 mins</p>
+                <button onclick="viewMugcakeRecipe(0)">View Recipe</button>
+            </div>
+            <div class="filters">
+                <div id="recipe-display"></div>
+                <button>🍝 Pasta</button>
+                <button>🧁 Desserts</button>
+                <button>🥪 Snacks</button>
+                <button>🥗 Healthy</button>
+            </div>
+        </div>
+        <div class="card1"></div>
+        </div>
+        </div>
+    <script src ="script.js"></script>
+    <script src ="Pasta.js"></script>
+    <script src ="Mugcake.js"></script>
+</body>
+</html>

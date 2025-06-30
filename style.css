@@ -1,0 +1,144 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(246, 215, 220);
+    padding: 0 20px;
+}
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.card-container{
+    display: flex;
+    justify-content: center;  
+    align-items: flex-start;  
+    gap: 150px;    
+    flex-wrap: wrap;  
+    margin: 0 auto;                   
+    margin-top: 40px;
+    padding: 40px 0;
+    width: 100%; 
+    box-sizing: border-box;
+}
+.card{
+    display:"inline-block";
+    background-color: rgb(253, 253, 253);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 380px;
+    height: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(190, 150, 255, 0.3);
+}
+.card img{
+    display: block;
+    margin: 20px auto 0;
+    width: 290px;
+    height: 300px;
+    border-radius: 1.5rem;
+}
+.card button{
+    font-weight: bold;
+    max-width: 150px;
+    padding: 8px 12px;
+    margin: 0 auto; 
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 2px solid #d7c6f4;
+    color: #7d5aa7;
+    transition: transform 0.3s ease;
+}
+.card button:hover{
+    transform: scale(1.03);
+    background-color: #d7c6f4;
+    color: white;
+    box-shadow: 0 8px 20px rgba(190, 150, 255, 0.3);
+}
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.filters button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  background: #f4e1fa;
+  color: #310758;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filters button:hover {
+  background: #e9c6ff;
+}
+
+.ingredient-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.pill {
+  background-color: #fff3f8;
+  color: #ff6fa1;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+.steps-heading {
+  font-size: 1.5rem;
+  color: #f27a90;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.ultra-light-steps {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.95rem;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  line-height: 1.5;
+}
+
+.ultra-light-steps li {
+  background-color: transparent;
+  padding: 0.3rem 0.5rem;
+  border-left: 3px solid #ffc0cb;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.ultra-light-steps li:hover {
+  background-color: #fff6f9;
+}
+.Ingredients-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f27a90;
+  align-items: center;
+}
+
+
+
+
+
+
